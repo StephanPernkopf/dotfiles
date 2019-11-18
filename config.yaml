@@ -27,6 +27,9 @@ dotfiles:
   d_i3:
     src: config/i3
     dst: ~/.config/i3
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
 profiles:
   SLL:
     dotfiles:
@@ -36,3 +39,4 @@ profiles:
     - f_gitconfig
     - f_ssh-agent.service
     - d_i3
+    - d_polybar
