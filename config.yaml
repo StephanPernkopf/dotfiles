@@ -30,6 +30,9 @@ dotfiles:
   d_polybar:
     src: config/polybar
     dst: ~/.config/polybar
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
 profiles:
   SLL:
     dotfiles:
@@ -40,3 +43,4 @@ profiles:
     - f_ssh-agent.service
     - d_i3
     - d_polybar
+    - d_kitty
