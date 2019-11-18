@@ -24,6 +24,9 @@ dotfiles:
   f_ssh-agent.service:
     src: config/systemd/user/ssh-agent.service
     dst: ~/.config/systemd/user/ssh-agent.service
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
 profiles:
   SLL:
     dotfiles:
@@ -32,3 +35,4 @@ profiles:
     - f_zprofile
     - f_gitconfig
     - f_ssh-agent.service
+    - d_i3
