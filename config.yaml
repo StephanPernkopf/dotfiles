@@ -21,6 +21,9 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
+  f_ssh-agent.service:
+    src: config/systemd/user/ssh-agent.service
+    dst: ~/.config/systemd/user/ssh-agent.service
 profiles:
   SLL:
     dotfiles:
@@ -28,3 +31,4 @@ profiles:
     - f_zshrc
     - f_zprofile
     - f_gitconfig
+    - f_ssh-agent.service
