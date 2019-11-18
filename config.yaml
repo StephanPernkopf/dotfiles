@@ -1,0 +1,30 @@
+config:
+  backup: true
+  banner: false
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: true
+  showdiff: true
+dotfiles:
+  f_xinitrc:
+    src: xinitrc
+    dst: ~/.xinitrc
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_zprofile:
+    src: zprofile
+    dst: ~/.zprofile
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+profiles:
+  SLL:
+    dotfiles:
+    - f_xinitrc
+    - f_zshrc
+    - f_zprofile
+    - f_gitconfig
