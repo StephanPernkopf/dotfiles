@@ -37,7 +37,7 @@ dotfiles:
     src: config/nvim
     dst: ~/.config/nvim
 profiles:
-  SLL:
+  SHARED:
     dotfiles:
     - f_xinitrc
     - f_zshrc
@@ -48,3 +48,9 @@ profiles:
     - d_polybar
     - d_kitty
     - d_nvim
+  SLL:
+    include:
+      - SHARED
+  SLPC:
+    include:
+      - SHARED
