@@ -36,6 +36,9 @@ dotfiles:
   d_nvim:
     src: config/nvim
     dst: ~/.config/nvim
+  f_pam_environment:
+    src: pam_environment
+    dst: ~/.pam_environment
 profiles:
   SHARED:
     dotfiles:
@@ -48,9 +51,10 @@ profiles:
     - d_polybar
     - d_kitty
     - d_nvim
+    - f_pam_environment
   SLL:
     include:
-      - SHARED
+    - SHARED
   SLPC:
     include:
-      - SHARED
+    - SHARED
