@@ -39,6 +39,9 @@ dotfiles:
   f_pam_environment:
     src: pam_environment
     dst: ~/.pam_environment
+  f_betterlockscreenrc:
+    src: config/betterlockscreenrc
+    dst: ~/.config/betterlockscreenrc
 profiles:
   SHARED:
     dotfiles:
@@ -52,6 +55,7 @@ profiles:
     - d_kitty
     - d_nvim
     - f_pam_environment
+    - f_betterlockscreenrc
   SLL:
     include:
     - SHARED
