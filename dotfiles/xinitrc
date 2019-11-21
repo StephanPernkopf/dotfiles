@@ -1,4 +1,3 @@
-# {{@@ header() @@}}
 #!/bin/sh
 
 userresources=$HOME/.Xresources
