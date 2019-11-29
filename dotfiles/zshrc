@@ -109,7 +109,7 @@ if command -v nvim &> /dev/null ; then
 	alias vim="nvim"
 fi
 # set custom editor
-export EDITOR=vim
+export EDITOR=nvim
 export NNN_USE_EDITOR=1
 
 # add fish-like syntax highlighting to shell
