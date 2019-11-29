@@ -223,9 +223,11 @@ exec_always --no-startup-id compton -b
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &> /tmp/polybar.log
 
 
-exec --no-startup-id keepassxc
 ## Assign applications to specific workspaces
-assign [class="^keepass"] $keepass_ws
+assign [class="KeePassXC"] $keepass_ws
+
+# Start custom applications
+exec --no-startup-id keepassxc
 
 #############################
 ### settings for i3-gaps: ###
